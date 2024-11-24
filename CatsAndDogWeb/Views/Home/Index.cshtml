@@ -1,0 +1,17 @@
+﻿@model RandomImage[]
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var currImage in Model)
+{
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="@currImage.url" alt="Photo for @currImage.id">
+        <div class="card-body">
+            <h5 class="card-title">Random Cat</h5>
+            <p class="card-text">Image of id: @currImage.id</p>
+            <a href="#" class="btn btn-primary">Get Details</a>
+        </div>
+    </div>
+}
