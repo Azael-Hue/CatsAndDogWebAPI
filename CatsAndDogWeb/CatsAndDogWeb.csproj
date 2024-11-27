@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="SendGrid" Version="9.29.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CatsAndDogAPI\CatsAndDogAPI.csproj" />
   </ItemGroup>
 
